@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de datos del auto</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /* Ajusta la ruta de la imagen según la ubicación del archivo en tu proyecto */
+            background-image: url('china.jpg'); /* Cambia esto por la ruta de tu imagen */
+            background-size: cover; /* La imagen cubrirá todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: #fff; /* Color de texto para contraste */
+        }
+
+        #header {
+            margin: auto;
+            width: 500px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        .nav li a {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            opacity: 0.9; /* Para que se vea el fondo a través del menú */
+        }
+
+        .nav li a:hover {
+            background-color: #434343;
+        }
+
+        .nav > li {
+            float: left;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        /* Estilos para el mensaje de bienvenida */
+        h2 {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Registros</a>
+                <ul>
+                    <li><a href="registrar_vehiculo.html">Registrar Vehículos</a></li>
+                    <li><a href="registro_carburador.html">Registrar Carburadores</a></li>
+                </ul>
+            </li>
+            <li><a href="">Consultas</a>
+                <ul>
+                    <li><a href="consultas.php?consulta=emisiones_fecha">Emisiones por Fecha</a></li>
+                    <li><a href="consultas.php?consulta=emisiones_sensor">Emisiones por Sensor</a></li>
+                    <li><a href="consultas.php?consulta=experimentos_vehiculos">Experimentos por Vehículo</a></li>
+                    <li><a href="lista_experimentos.php">Todos los Experimentos</a></li>
+                    <li><a href="consultas.php?consulta=experimentos_relacion">Experimentos por Relación Aire/Combustible</a></li>
+                    <li><a href="consultas.php?consulta=sensors">Todos los Sensores</a></li>
+                    <li><a href="consultas.php?consulta=sensores_tipo">Sensores por Tipo</a></li>
+                    <li><a href="consultas.php?consulta=carburadores_vehiculos">Carburadores por Vehículo</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_ecus_sensores">Vehículos con ECU y Sensores</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos">Todos los Vehículos</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_sensores">Vehículos y Sensores</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_alimentacion">Sistema de Alimentación de Vehículos</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_sistema">Vehículos por Sistema de Alimentación</a></li>
+                    <li><a href="grafico.php">Grafico</a></li>
+                </ul>
+            </li>
+            <li><a href="">Acciones</a>
+                <ul>
+                    <li><a href="modificar/Index.html">Modificar</a></li>
+                    <li><a href="eliminar/formulario_borrar.php">Eliminar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Ponga el mouse sobre el apartado de registro y seleccione el apartado deseado</h2>
+
+</body>
+</html>

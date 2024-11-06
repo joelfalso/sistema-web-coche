@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de carburador</title>
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Registros</a>
+                <ul>
+                    <li><a href="registrar_vehiculo.html">Registrar Vehículos</a></li>
+                    <li><a href="registro_carburador.html">Registrar Carburadores</a></li>
+                </ul>
+            </li>
+            <li><a href="">Consultas</a>
+                <ul>
+                    <li><a href="consultas.php?consulta=emisiones_fecha">Emisiones por Fecha</a></li>
+                    <li><a href="consultas.php?consulta=emisiones_sensor">Emisiones por Sensor</a></li>
+                    <li><a href="consultas.php?consulta=experimentos_vehiculos">Experimentos por Vehículo</a></li>
+                    <li><a href="lista_experimentos.php">Todos los Experimentos</a></li>
+                    <li><a href="consultas.php?consulta=experimentos_relacion">Experimentos por Relación Aire/Combustible</a></li>
+                    <li><a href="consultas.php?consulta=sensors">Todos los Sensores</a></li>
+                    <li><a href="consultas.php?consulta=sensores_tipo">Sensores por Tipo</a></li>
+                    <li><a href="consultas.php?consulta=carburadores_vehiculos">Carburadores por Vehículo</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_ecus_sensores">Vehículos con ECU y Sensores</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos">Todos los Vehículos</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_sensores">Vehículos y Sensores</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_alimentacion">Sistema de Alimentación de Vehículos</a></li>
+                    <li><a href="consultas.php?consulta=vehiculos_sistema">Vehículos por Sistema de Alimentación</a></li>
+                    <li><a href="grafico.php">Grafico</a></li>
+                </ul>
+            </li>
+            <li><a href="">Acciones</a>
+                <ul>
+                    <li><a href="modificar/Index.html">Modificar</a></li>
+                    <li><a href="eliminar/formulario_borrar.php">Eliminar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Ponga el mouse sobre el apartado de registro y seleccione el apartado deseado</h2>
+
+    <form>
+    <h1>Registro carburador</h1>
+    <label for="id">Id Carburador:</label>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <label for="tipo_carburador">tipo de carburador:</label>
+    <input type="text" id="tipo_carburador" name="tipo_carburador" required><br><br>
+
+    <label for="ajuste_mezcla">ajuste de la mezcla:</label>
+    <input type="text" id="ajuste_mezcla" name="ajuste_mezcla" required><br><br>
+
+    <label for="tipo_combustible">tipo de combustible:</label>
+    <input type="text" id="tipo_combustible" name="tipo_combustible" required><br><br>
+
+    <label for="vehiculo_id">id del vehiculo:</label>
+    <input type="text" id="vehiculo_id" name="vehiculo_id" required><br><br>
+
+
+
+    <input type="submit" value="Registrar carburador">
+    </form>
+</body>
+</html>
